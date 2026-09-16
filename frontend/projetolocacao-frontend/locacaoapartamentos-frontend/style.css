@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 40px;
+    background-color: #121212;
+    color: #eaeaea;
+}
+
+h1 {
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+
+h2 {
+    color: #cccccc;
+}
+
+#apartamentos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#apartamentos > div {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    border: 1px solid #333;
+}
+
+#apartamentos h3 {
+    margin-top: 0;
+    color: #ffffff;
+}
+
+#apartamentos p {
+    margin: 8px 0;
+    color: #bbbbbb;
+}
+
+button {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #6c63ff;
+    color: white;
+}
+
+button:hover {
+    background-color: #574fd6;
+}
+
+select {
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #1e1e1e;
+    color: #ffffff;
+    border: 1px solid #444;
+    border-radius: 6px;
+}
+#tela-locadores {
+    display: none;
+}
+
+nav {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+}
+
+form input {
+    padding: 10px;
+    background-color: #1e1e1e;
+    color: #ffffff;
+    border: 1px solid #444;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+#tela-alugar {
+    display: none;
+}
+
+#tela-anunciar {
+    display: none;
+}
+
+#menu-principal {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+#menu-principal button {
+    padding: 15px 25px;
+    font-size: 16px;
+}
+form h3 {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+
+form button {
+    margin-top: 15px;
+}

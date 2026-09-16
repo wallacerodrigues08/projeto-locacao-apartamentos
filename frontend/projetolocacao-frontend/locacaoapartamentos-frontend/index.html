@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Locação de Apartamentos</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Locação de Apartamentos</h1>
+
+    <div id="menu-principal">
+
+        <button onclick="mostrarTela('alugar')">
+            Quero alugar
+        </button>
+
+        <button onclick="mostrarTela('anunciar')">
+            Anunciar imóvel
+        </button>
+
+    </div>
+<section id="tela-alugar">
+
+    <h2>Apartamentos disponíveis</h2>
+
+    <div id="apartamentos"></div>
+
+    <h2>Apartamentos alugados</h2>
+
+    <div id="apartamentos-alugados"></div>
+
+    <div id="formulario-aluguel" style="display: none;">
+
+        <h2>Dados do locatário</h2>
+
+        <form id="form-aluguel">
+
+            <input
+                type="text"
+                id="nome-locatario"
+                placeholder="Nome"
+                required
+            >
+
+            <input
+                type="email"
+                id="email-locatario"
+                placeholder="E-mail"
+                required
+            >
+
+            <input
+                type="text"
+                id="telefone-locatario"
+                placeholder="Telefone"
+                required
+            >
+
+            <button type="submit">
+                Confirmar aluguel
+            </button>
+
+            <button type="button" onclick="cancelarAluguel()">
+                Cancelar
+            </button>
+
+            <p id="mensagem-aluguel"></p>
+
+        </form>
+
+    </div>
+
+</section>
+
+    <section id="tela-anunciar">
+
+    <h2>Anunciar imóvel</h2>
+
+    <form id="form-anunciar">
+
+        <h3>Dados do locador</h3>
+
+        <input type="text" id="nome-locador" placeholder="Nome" required>
+
+        <input type="email" id="email-locador" placeholder="E-mail" required>
+
+        <input type="text" id="telefone-locador" placeholder="Telefone" required>
+
+
+        <h3>Dados do edifício</h3>
+
+        <input type="text" id="nome-edificio" placeholder="Nome do edifício" required>
+
+        <input type="text" id="endereco-edificio" placeholder="Endereço" required>
+
+
+        <h3>Dados do apartamento</h3>
+
+        <input type="text" id="titulo-apartamento" placeholder="Título do apartamento" required>
+
+        <input type="text" id="descricao-apartamento" placeholder="Descrição" required>
+
+        <input type="number" id="valor-aluguel" placeholder="Valor do aluguel" step="0.01" required>
+
+        <button type="submit">Publicar imóvel</button>
+
+        <p id="mensagem-anunciar"></p>
+
+    </form>
+
+</section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
