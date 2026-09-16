@@ -1,0 +1,12 @@
+# Maven
+backend/**/target/
+
+# IntelliJ IDEA
+backend/**/.idea/
+backend/**/*.iml
+
+# VS Code
+frontend/**/.vscode/
+
+# Configurações locais
+backend/**/application-local.properties
