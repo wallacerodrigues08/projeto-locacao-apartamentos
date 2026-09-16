@@ -46,8 +46,8 @@ As configurações utilizadas são:
 
 ```properties
 spring.datasource.url=jdbc:postgresql://localhost:5432/locacao_apartamentos
-spring.datasource.username=postgres
-spring.datasource.password=123456
+spring.datasource.username=SEU_USUARIO
+spring.datasource.password=SUA_SENHA
 
 spring.jpa.hibernate.ddl-auto=update
 ```
